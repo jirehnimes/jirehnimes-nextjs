@@ -1,0 +1,31 @@
+@import '/styles/colors'
+
+.experience
+  [class^="layout"]
+    min-height: 1124px
+    text-align: center
+
+    [class^="images_list"]
+      margin: 8em 0
+
+      [class^="images_container"]
+        position: relative
+        display: inline-block
+        width: 280px
+        margin: 16px
+
+        div
+          position: relative
+          height: 100px
+
+    [class^="disclaimer"]
+      padding: 0 8vw
+      font-size: 12px
+
+  [class^="dark"] &
+    *
+      color: $white
+
+    [class^="images_list"]
+      background-color: $white
+  

@@ -1,0 +1,14 @@
+@import '/styles/colors'
+  
+.index
+  position: relative
+  width: 100vw
+  background-color: $white
+
+  // Transition settings when changing ambiance.
+  *
+    transition: background-color 600ms ease-out, color 600ms ease-out
+    will-change: background-color, color
+
+  [class*="dark"] &
+    background-color: $black

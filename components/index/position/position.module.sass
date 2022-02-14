@@ -1,0 +1,32 @@
+@import '/styles/colors'
+
+.position
+  position: relative
+  min-height: 1024px
+  background-color: $light-light-theme
+  text-align: center
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%)
+
+  [class^="layout"]
+    padding: 32em 0 16em
+
+    [class^="linkedin"]
+      display: flex
+      padding: 8vw
+      margin: 8em 0
+
+      [class^="message"]
+        padding: 0 2vw
+
+        [class^="title"]
+          text-align: left
+
+          h1
+            font-size: 92px
+            line-height: 92px
+
+        [class^="description"]
+          text-align: left
+
+  [class^="dark"] &
+    background-color: $dark-light-theme
