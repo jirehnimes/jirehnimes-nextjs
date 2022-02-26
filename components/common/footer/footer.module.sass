@@ -5,5 +5,33 @@
   min-height: 360px
   background-color: $light-dark-theme
 
+  [class^="content"]
+    position: relative
+    width: 100%
+
+    [class^="profile"],
+    [class^="sitemap"]
+      display: inline-block
+      width: 50%
+ 
+    [class^="profile"]
+      [class^="logo"]
+        height: 100px
+        width: 100px
+        background-color: $white
+
+      [class^="profile_links"]
+        [class^="iconify"]
+          height: 52px
+          width: 52px
+
+    [class^="sitemap"]
+      text-align: right
+
+      & > a
+        display: block
+        color: $white
+        font-size: 20px
+
   [class^="dark"] &
     background-color: $dark-dark-theme

@@ -5,7 +5,7 @@ import styles from './portfolio.module.sass';
 
 const Portfolio = () => {
   return (
-    <section className={styles.portfolio}>
+    <section id="portfolio" className={styles.portfolio}>
       <div className="position">
         <Layout>
           <Title>PORTFOLIO</Title>

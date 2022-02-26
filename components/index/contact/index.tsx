@@ -5,7 +5,7 @@ import styles from './contact.module.sass';
 
 const Contact = () => {
   return (
-    <section className={styles.contact}>
+    <section id="contact" className={styles.contact}>
       <Layout>
         <Title>GET IN TOUCH</Title>
       </Layout>

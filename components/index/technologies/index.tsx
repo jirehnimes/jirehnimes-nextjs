@@ -5,7 +5,7 @@ import styles from './technologies.module.sass';
 
 const Technologies = () => {
   return (
-    <section className={styles.technologies}>
+    <section id="technologies" className={styles.technologies}>
       <Layout>
         <Title>TECHNOLOGIES</Title>
       </Layout>

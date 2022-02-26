@@ -31,7 +31,7 @@ const COMPANIES = [
 
 const Experience = () => {
   return (
-    <section className={styles.experience}>
+    <section id="experience" className={styles.experience}>
       <Layout>
         <Title>6 YEARS</Title>
         <Description>WORKING PROFESSIONALLY</Description>      
