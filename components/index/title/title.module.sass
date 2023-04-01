@@ -1,3 +1,5 @@
+@import '/styles/breakpoints'
+
 .title
   text-transform: uppercase
   text-align: center
@@ -7,3 +9,9 @@
     font-size: 144px
     letter-spacing: 8px
     line-height: 144px
+    word-wrap: break-word
+
+    @include devices(tablet)
+      font-size: 12vw !important
+      letter-spacing: initial
+      line-height: initial

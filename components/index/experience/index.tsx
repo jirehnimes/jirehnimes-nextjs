@@ -15,42 +15,50 @@ const COMPANIES = [
   {
     name: 'CC Mobile Financial Services Philippines, Inc.',
     image: '/images/companies/cash_credit.png',
-    url: 'https://cafe24.ph/',
+    url: 'https://google.com/',
   },
   {
     name: 'Ematic Solutions Philippines',
     image: '/images/companies/ematic_solutions.png',
-    url: 'https://cafe24.ph/',
+    url: 'https://www.ematicsolutions.com/',
   },
   {
     name: 'Total Assurance Solutions Group',
     image: '/images/companies/tas.png',
-    url: 'https://cafe24.ph/',
+    url: 'https://google.com/',
+  },
+  {
+    name: 'Malveda Holdings Corporation',
+    image: '/images/companies/mhc.png',
+    url: 'https://leadsagri.com/',
   },
 ];
 
 const Experience = () => {
+  const openWebsite = (url: string) => window.open(url, '_blank');
+
   return (
     <section className={styles.experience}>
       <Layout>
         <Title>6 YEARS</Title>
-        <Description>WORKING PROFESSIONALLY</Description>      
-        <Description>SINCE JUNE 2016</Description>     
+        <Description>WORKING PROFESSIONALLY</Description>
+        <Description>SINCE JUNE 2016</Description>
 
         <div className="images_list">
           {
             COMPANIES.map(
-              (company, index) => <div 
+              (company, index) => <div
                 className="images_container"
                 key={index}
               >
                 <div>
-                  <Image 
+                  <Image
                     src={company.image}
                     key={index}
+                    title={company.name}
                     alt={company.name}
-                    layout="fill"
-                    objectFit="contain"
+                    fill
+                    onClick={() => openWebsite(company.url)}
                   />
                 </div>
               </div>
@@ -59,8 +67,8 @@ const Experience = () => {
         </div>
 
         <p className="disclaimer">
-          DISCLAIMER: COMPANY LOGOS INCLUDED ABOVE WERE COMPANIES THAT I’VE WORKED WITH THROUGHOUT MY WORKING EXPERIENCE. 
-          IMAGE FILES USED WERE SEARCHED AND DOWNLOADED FROM THEIR OFFICIAL WEBSITE OR FROM SEARCH ENGINE. 
+          DISCLAIMER: COMPANY LOGOS INCLUDED ABOVE WERE COMPANIES THAT I’VE WORKED WITH THROUGHOUT MY WORKING EXPERIENCE.
+          IMAGE FILES USED WERE SEARCHED AND DOWNLOADED FROM THEIR OFFICIAL WEBSITE OR FROM SEARCH ENGINE.
           I DON’T TAKE OWNERSHIP OF THESE LOGOS, CREATED OR DESIGNED THEM, OR USING THEM FOR PROFIT.
         </p>
       </Layout>

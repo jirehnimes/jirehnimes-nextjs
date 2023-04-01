@@ -21,11 +21,10 @@ const Home: NextPage = () => {
           <title>Jireh June Nimes</title>
           <meta name="description" content="My portfolio website." />
           <link rel="icon" href="/favicon.ico" />
-          <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
         </Head>
 
         <Navbar/>
-        
+
         <Jumbotron/>
         <Experience/>
         <Position/>

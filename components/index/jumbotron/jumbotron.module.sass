@@ -1,3 +1,4 @@
+@import '/styles/breakpoints'
 @import '/styles/colors'
 
 .jumbotron
@@ -13,10 +14,11 @@
     width: 100vw
     height: 100%
     background-color: rgba($black, 0.8)
+    overflow-x: hidden
 
   [class^="layout"]
     position: relative
-    min-height: 1124px
+    height: 120vh
 
     [class^="content"]
       position: absolute
@@ -35,6 +37,17 @@
       p
         font-size: 24px
         color: $white
+
+      @include devices(tablet)
+        h1
+          font-size: 12vw
+
+        p
+          font-size: 14px
+
+      @include devices-and-orientation(tablet, landscape)
+        h1
+          font-size: 8vw
 
   // Dark mode
   [class*="dark"] &

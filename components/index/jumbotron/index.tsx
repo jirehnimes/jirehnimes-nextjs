@@ -13,9 +13,9 @@ const Jumbotron = () => {
         <div className="content">
           <h1>JIREH NIMES</h1>
           <p>
-            I&lsquo;m a web developer from the Philippines who is passionate<br/>
+            I&lsquo;m a developer from the Philippines who is passionate<br/>
             on delivering valuable outputs, learning new technologies, and<br/>
-            collaboration in order to provide innovative solutions.
+            collaborative in order to provide software applications and innovative solutions.
           </p>
         </div>
       </Layout>

@@ -1,5 +1,6 @@
 import Layout from '@/components/index/layout';
 import Title from '@/components/index/title';
+import PortfolioItem from './portfolio-item';
 
 import styles from './portfolio.module.sass';
 
@@ -10,6 +11,10 @@ const Portfolio = () => {
         <Layout>
           <Title>PORTFOLIO</Title>
         </Layout>
+
+        <div className="list">
+          <PortfolioItem />
+        </div>
       </div>
     </section>
   );
